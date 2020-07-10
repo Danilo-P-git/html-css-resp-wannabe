@@ -73,7 +73,73 @@ img {
 .clear {
   clear: both;
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 1024px) {
+  * {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .row{
+    width: 100%;
+  }
+  #lezioni .row img {
+    width: 50%;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    float: none;
+    width: 50%;
+    margin: auto;
+  }
+  #lezioni .row>.left {
+    padding-bottom: 50px;
+  }
+  #steps .row>.left,
+  #steps .row>.central {
+    float: left;
+    width: 50%;
+  }
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+    display: inline-block;
+    padding-top: 25px;
+  }
+  #why .row>.first,
+  #why .row>.second {
+    float: left;
+    width: 50%;
+  }
+  #why .row>.third {
+    float: none;
+    width: 100%;
+  }
+  #why .row>.first img,
+  #why .row>.second img,
+  #why .row>.third img {
+    width: 50%;
+  }
+  #why .row>.first hr,
+  #why .row>.second hr,
+  #why .row>.third hr {
+    display: none;
+  }
+  #why .row>.third {
+    display: inline-block;
+    padding-top: 25px;
+  }
+  #why .row>.third img {
+    width: 25%;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
   .row{
     width: 100%;
   }
@@ -125,3 +191,55 @@ img {
   }
 }
 }
+
+/* @@media screen and (min-width:800px) {
+  .row{
+    width: 100%;
+  }
+  #lezioni .row img {
+    width: 100%
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    float: none;
+    margin: auto;
+    font-size: 20px;
+  }
+  #lezioni .row>.left {
+    padding-bottom: 50px;
+  }
+  #steps .row>.left,
+  #steps .row>.central {
+    float: left;
+    width: 50%;
+  }
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+    display: inline-block;
+    padding-top: 25px;
+  }
+  #why .row>.first,
+  #why .row>.second {
+    float: left;
+    width: 50%;
+  }
+  #why .row>.third {
+    float: none;
+    width: 100%;
+  }
+  #why .row>.first img,
+  #why .row>.second img,
+  #why .row>.third img {
+    width: 50%;
+  }
+  #why .row>.first hr,
+  #why .row>.second hr,
+  #why .row>.third hr {
+    display: none;
+  }
+  #why .row>.third {
+    display: inline-block;
+    padding-top: 25px;
+  }
+} */
